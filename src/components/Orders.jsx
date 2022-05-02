@@ -1,8 +1,8 @@
 import axios from "axios";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export const Orders = () => {
-  const [data,setData]=[]
+  const [data,setData]=useState([])
   //  Get all data when admin logs in and populate it
   // store it in redux
       useEffect(() => {
